@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* General */
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +17,7 @@
     background-color: #FCF2E8;
 }
 
-/* Section heading */
+
 .thirdSec-para {
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
     text-align: center;
 }
 
-/* Cards grid */
+
 .collection .grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -92,7 +92,7 @@
     height: 100%;
 }
 
-/* Card image */
+
 .img-card {
     position: relative;
     padding: 18px;
@@ -104,7 +104,7 @@
     width: 100%;
 }
 
-/* Card title */
+
 .card .first-para {
     font-family: "Playfair Display";
     font-weight: 600;
@@ -124,7 +124,7 @@
     letter-spacing: 0.14px;
 }
 
-/* Roast profile */
+
 .above-line {
     display: flex;
     justify-content: space-between;
@@ -154,7 +154,7 @@
     background-color: #845326;
 }
 
-/* Desktop buttons */
+
 .card .btn {
     background-color: #F0E7DD;
     width: 80%;
@@ -167,7 +167,7 @@
     display: none;
 }
 
-/* Mobile drink labels */
+
 .hid1,
 .hid2,
 .hid3 {
@@ -185,7 +185,7 @@
     padding: 4px;
 }
 
-/* Category labels on desktop */
+
 .sem-box1,
 .sem-box2,
 .sem-box3 {
@@ -199,7 +199,7 @@
     padding: 4px 12px;
 }
 
-/* Desktop prices */
+
 .bot-box1,
 .bot-box2,
 .bot-box3 {
@@ -225,7 +225,7 @@
     color: #845326;
 }
 
-/* Mobile prices - hidden on desktop */
+
 .wot-box1,
 .wot-box2,
 .wot-box3 {
@@ -233,7 +233,7 @@
 }
 
 
-/* TABLET: 769px - 1000px */
+
 @media screen and (max-width: 1000px) {
 
     .collection .grid {
@@ -245,7 +245,7 @@
 }
 
 
-/* MOBILE: 768px and below */
+
 @media screen and (max-width: 768px) {
 
     .third {
@@ -253,7 +253,7 @@
         padding-top: 32px;
     }
 
-    /* Heading */
+   
     .thirdSec-para {
         padding: 0 20px;
     }
@@ -281,7 +281,7 @@
         font-size: 34px;
     }
 
-    /* One card per row */
+   
     .collection .grid {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -292,26 +292,26 @@
         padding-bottom: 16px;
     }
 
-    /* Images */
+    
     .img-card {
         padding: 10px;
     }
 
-    /* Hide desktop category labels */
+    
     .sem-box1,
     .sem-box2,
     .sem-box3 {
         display: none;
     }
 
-    /* Hide desktop prices */
+    
     .bot-box1,
     .bot-box2,
     .bot-box3 {
         display: none;
     }
 
-    /* Show mobile prices */
+    
     .wot-box1,
     .wot-box2,
     .wot-box3 {
@@ -332,7 +332,7 @@
         color: #0E0402;
     }
 
-    /* Show drink labels */
+    
     .hid1,
     .hid2,
     .hid3 {
@@ -340,7 +340,7 @@
         justify-content: space-between;
     }
 
-    /* Hide roast profiles */
+    
     .above-line {
         display: none;
     }
@@ -350,7 +350,7 @@
         display: none;
     }
 
-    /* Buttons */
+   
     .card .btn {
         display: none;
     }
@@ -373,7 +373,7 @@
 }
 
 
-/* VERY SMALL MOBILE */
+
 @media screen and (max-width: 400px) {
 
     .third .second-para {
