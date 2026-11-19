@@ -1,0 +1,399 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.third {
+    margin-top: 60px;
+    background-color: #FCF2E8;
+}
+
+/* Section heading */
+.thirdSec-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+    padding-top: 28px;
+    text-align: center;
+}
+
+.parasmal,
+.handpara {
+    display: none;
+}
+
+.dash {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #845326;
+    left: -20px;
+    top: 5px;
+}
+
+.parasmal {
+    position: relative;
+}
+
+.third .first-para {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 12px;
+    /*color: #845326;*/
+    letter-spacing: 1.2px;
+}
+
+.third .second-para {
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 40px;
+    color: #0E0402;
+    letter-spacing: -0.4px;
+}
+
+.third .third-para {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    font-size: 16px;
+    color: #4F4442;
+    text-align: center;
+}
+
+/* Cards grid */
+.collection .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.grid .card {
+    background-color: #FFFFFF;
+    min-width: 0;
+}
+
+.grid .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Card image */
+.img-card {
+    position: relative;
+    padding: 18px;
+    width: 100%;
+}
+
+.card .img-card img {
+    display: block;
+    width: 100%;
+}
+
+/* Card title */
+.card .first-para {
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 16px;
+}
+
+.card .second-para {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    font-size: 14px;
+    width: 80%;
+    letter-spacing: 0.14px;
+}
+
+/* Roast profile */
+.above-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    width: 80%;
+        color: #4F4442;
+}
+
+.drink-disc {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.72px;
+    color: #845326;
+}
+
+.card .line {
+    height: 3px;
+    width: 80%;
+    background-color: #F6ECE2;
+    margin-top: 8px;
+}
+
+.card .inner-line {
+    height: 3px;
+    width: 40%;
+    background-color: #845326;
+}
+
+/* Desktop buttons */
+.card .btn {
+    background-color: #F0E7DD;
+    width: 80%;
+    height: 40px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.card .btn2 {
+    display: none;
+}
+
+/* Mobile drink labels */
+.hid1,
+.hid2,
+.hid3 {
+    display: none;
+}
+
+.hid1 p,
+.hid2 p,
+.hid3 p {
+    color: #845326;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #F6ECE2;
+    padding: 4px;
+}
+
+/* Category labels on desktop */
+.sem-box1,
+.sem-box2,
+.sem-box3 {
+    position: absolute;
+    left: 19px;
+    top: 25px;
+    z-index: 1;
+    border: 1px solid #D3C3C04D;
+    background-color: #FFF8F3E5;
+    border-radius: 12px;
+    padding: 4px 12px;
+}
+
+/* Desktop prices */
+.bot-box1,
+.bot-box2,
+.bot-box3 {
+    position: absolute;
+    right: 22px;
+    bottom: 25px;
+    z-index: 1;
+    border: 1px solid #2B1B17;
+    background-color: #2B1B17;
+    border-radius: 12px;
+    padding: 4px 12px;
+}
+
+.img-card h3 {
+    color: #FFF8F3;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+}
+
+.img-card p {
+    color: #845326;
+}
+
+/* Mobile prices - hidden on desktop */
+.wot-box1,
+.wot-box2,
+.wot-box3 {
+    display: none;
+}
+
+
+/* TABLET: 769px - 1000px */
+@media screen and (max-width: 1000px) {
+
+    .collection .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+        margin-top: 45px;
+    }
+
+}
+
+
+/* MOBILE: 768px and below */
+@media screen and (max-width: 768px) {
+
+    .third {
+        margin-top: 35px;
+        padding-top: 32px;
+    }
+
+    /* Heading */
+    .thirdSec-para {
+        padding: 0 20px;
+    }
+
+    .parasmal {
+        display: block;
+    }
+
+    .thirdSec-para > .para.first-para {
+        display: none;
+    }
+
+    .handpara {
+        display: block;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        color: #4F4442;
+    }
+
+    .third .third-para {
+        display: none;
+    }
+
+    .third .second-para {
+        font-size: 34px;
+    }
+
+    /* One card per row */
+    .collection .grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 35px;
+    }
+
+    .grid .row {
+        padding-bottom: 16px;
+    }
+
+    /* Images */
+    .img-card {
+        padding: 10px;
+    }
+
+    /* Hide desktop category labels */
+    .sem-box1,
+    .sem-box2,
+    .sem-box3 {
+        display: none;
+    }
+
+    /* Hide desktop prices */
+    .bot-box1,
+    .bot-box2,
+    .bot-box3 {
+        display: none;
+    }
+
+    /* Show mobile prices */
+    .wot-box1,
+    .wot-box2,
+    .wot-box3 {
+        position: absolute;
+        right: 19px;
+        top: 24px;
+        z-index: 1;
+        border: 1px solid #2B1B17;
+        background-color: #FFF8F3E5;
+        border-radius: 12px;
+        padding: 4px 12px;
+        display: block;
+    }
+
+    .wot-box1 h3,
+    .wot-box2 h3,
+    .wot-box3 h3 {
+        color: #0E0402;
+    }
+
+    /* Show drink labels */
+    .hid1,
+    .hid2,
+    .hid3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Hide roast profiles */
+    .above-line {
+        display: none;
+    }
+
+    .card .line,
+    .card .inner-line {
+        display: none;
+    }
+
+    /* Buttons */
+    .card .btn {
+        display: none;
+    }
+
+    .card .btn2 {
+        display: block;
+        background-color: #2B1B17;
+        color: #FFF8F3;
+        width: 80%;
+        height: 40px;
+        margin-top: 12px;
+    }
+
+    .card .btn2 img {
+        width: 12px;
+        height: 15px;
+        margin-right: 4px;
+    }
+
+}
+
+
+/* VERY SMALL MOBILE */
+@media screen and (max-width: 400px) {
+
+    .third .second-para {
+        font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 19.25px;
+letter-spacing: 0.14px;
+vertical-align: middle;
+
+    }
+
+    .handpara {
+        font-size: 13px;
+    }
+
+    .card .first-para {
+        font-size: 18px;
+    }
+
+}
